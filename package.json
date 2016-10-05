@@ -1,0 +1,41 @@
+{
+  "name": "dice.react",
+  "version": "0.0.1",
+  "description": "Dice components",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha ./tests/unit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcapuano328/dice.react.git"
+  },
+  "keywords": [
+    "dice",
+    "react"
+  ],
+  "author": "jeff capuano",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jcapuano328/dice.react/issues"
+  },
+  "homepage": "https://github.com/jcapuano328/dice.react#readme",
+  "dependencies": {
+      "apsl-react-native-button": "^3.0.0",
+      "react": "^15.3.2",
+      "react-native": "^0.34.0",
+      "react-native-audioplayer": "^0.2.0"
+  },
+  "devDependencies": {
+      "babel-core": "^6.17.0",
+      "babel-preset-react-native": "^1.9.0",
+      "chai": "^3.5.0",
+      "chai-enzyme": "^0.5.2",
+      "enzyme": "^2.4.1",
+      "mocha": "^3.1.0",
+      "react-dom": "^15.3.2",
+      "react-native-mock": "^0.2.6",
+      "sinon": "^1.17.6",
+      "sinon-chai": "^2.8.0"
+  }
+}
