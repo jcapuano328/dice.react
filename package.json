@@ -1,5 +1,5 @@
 {
-  "name": "dice.react",
+  "name": "react-native-dice",
   "version": "0.0.1",
   "description": "Dice components",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jcapuano328/dice.react.git"
+    "url": "git+https://github.com/jcapuano328/react-native-dice.git"
   },
   "keywords": [
     "dice",
@@ -17,9 +17,9 @@
   "author": "jeff capuano",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jcapuano328/dice.react/issues"
+    "url": "https://github.com/jcapuano328/react-native-dice/issues"
   },
-  "homepage": "https://github.com/jcapuano328/dice.react#readme",
+  "homepage": "https://github.com/jcapuano328/react-native-dice#readme",
   "dependencies": {
       "apsl-react-native-button": "^3.0.0",
       "react": "^15.3.2",
