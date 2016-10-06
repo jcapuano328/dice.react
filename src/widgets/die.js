@@ -53,7 +53,7 @@ var Die = React.createClass({
                 height: size,
                 backgroundColor: diecolor,
                 borderRadius: 2,
-                borderColor: dotcolor,
+                borderColor: dotcolor == 'black' ? dotcolor : 'black',
                 borderWidth: 1,
                 //marginTop: 5,
                 marginLeft: 5,
