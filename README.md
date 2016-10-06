@@ -1,8 +1,8 @@
-# dice.react
+# react-native-dice
 Dice and widgets
 
 ### Install it
-`npm install dice.react`
+`npm install react-native-dice`
 
 ### Test it
 `npm test`
