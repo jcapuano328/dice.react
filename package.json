@@ -21,7 +21,6 @@
   },
   "homepage": "https://github.com/jcapuano328/react-native-dice#readme",
   "dependencies": {
-      "apsl-react-native-button": "^3.0.0",
       "react": "^15.3.2",
       "react-native": "^0.34.0",
       "react-native-audioplayer": "^0.2.0"

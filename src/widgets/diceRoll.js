@@ -4,7 +4,7 @@ var React = require('react');
 import { View, Text, TouchableOpacity } from 'react-native';
 var Button = require('apsl-react-native-button');
 var Dice = require('../services/dice');
-var DieButton = require('./die');
+var Die = require('./die');
 
 var DiceRoll = React.createClass({
     dice: null,
@@ -27,17 +27,15 @@ var DiceRoll = React.createClass({
                         die.value(this.props.values[i]);
                     }
                     return (
-                        <View key={i} style={{flex:1}}>
-                            <DieButton die={i+1} value={die.value()} size={size} color={die.color()} onPress={this.onDie} />
-                        </View>
+                        <Die key={i} die={i+1} value={die.value()} size={size} color={die.color()} type={this.props.type} onPress={this.onDie} />
                     );
                 })}
-                <View style={{flex:1, marginRight: 5, justifyContent: 'center'}}>
+                <View style={{marginRight: 5, justifyContent: 'center'}}>
                     <TouchableOpacity onPress={this.onRoll} style={{
                         //flex: 1,
                         //flexDirection: 'row',
                         justifyContent: 'center',
-                        //width: size,
+                        width: size*1.25,
                         height: size,
                         backgroundColor: this.props.buttonBackgroundColor || '#3F51B5',
                         borderRadius: 10,
