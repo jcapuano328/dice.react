@@ -16,6 +16,9 @@ function Die(low, high, diecolor, dotcolor) {
 			dot: dotcolor
 		};
     }
+	self.sides = function() {
+		return high;
+	}
 
     self.value = function(d) {
     	if (typeof d != 'undefined') {
