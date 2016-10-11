@@ -38,9 +38,9 @@ var Die = React.createClass({
                     borderTopWidth: size*.25,
                     borderTopColor: diecolor,
                     borderLeftColor: 'transparent',
-                    borderLeftWidth: size*.25,
+                    borderLeftWidth: size*.5,
                     borderRightColor: 'transparent',
-                    borderRightWidth: size*.25,
+                    borderRightWidth: size*.5,
                     borderBottomColor: 'transparent',
                     borderBottomWidth: 0,
                 }}/>
@@ -50,7 +50,7 @@ var Die = React.createClass({
                     height: size,
                     alignItems: 'center',
                     justifyContent: 'center',
-                    top: 5,
+                    top: 2,
                     left: 0
                 }}>
                     <DieFaceNumber value={this.props.value} size={size} color={dotcolor} />
