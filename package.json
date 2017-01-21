@@ -21,8 +21,8 @@
   },
   "homepage": "https://github.com/jcapuano328/react-native-dice#readme",
   "dependencies": {
-      "react": "^15.3.2",
-      "react-native": "^0.34.0",
+      "react": "^15.4.1",
+      "react-native": "^0.39.2",  
       "react-native-audioplayer": "^0.2.0"
   },
   "devDependencies": {
