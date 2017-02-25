@@ -13,7 +13,7 @@ var DiceTray = React.createClass({
     },
     render() {
         this.dice = new Dice.Dice(this.props.dice);
-        let size = this.props.size || 64;         
+        let size = this.props.size;
         return (
             <View style={{flex: 1, flexDirection: 'row', justifyContent: 'center', alignItems: 'center'}}>
                 {this.dice.map((die, i) => {

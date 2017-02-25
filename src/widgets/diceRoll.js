@@ -15,14 +15,13 @@ var DiceRoll = React.createClass({
       die.increment(true);
       this.props.onDie && this.props.onDie(e, die.value());
     },
-    render() {
-        let size = this.props.size || 64;
+    render() {        
         let dir = this.props.direction == 'vertical' ? 'column' : 'row';
         this.dice = new Dice.Dice(this.props.dice);
         return (
             <View style={{flex:1, flexDirection: dir, justifyContent: 'center', alignItems: 'center'}}>
-                {this.renderDice(size)}
-                {this.renderButton(size)}
+                {this.renderDice(this.props.size)}
+                {this.renderButton(this.props.size)}
             </View>
         );
     },
