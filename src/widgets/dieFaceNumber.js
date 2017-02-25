@@ -1,6 +1,4 @@
-'use strict'
-
-var React = require('react');
+import React from 'react';
 import { View, Text } from 'react-native';
 
 var DieFace = React.createClass({
