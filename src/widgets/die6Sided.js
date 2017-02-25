@@ -12,9 +12,10 @@ var Die = React.createClass({
             height: 0,
             viewHeight: 100
         };
-    },    
-    onLayout(e) {        
-        if (this.state.width != e.nativeEvent.layout.width) {
+    },
+    onLayout(e) {
+        if (this.state.width != e.nativeEvent.layout.width /*||
+            this.state.height != e.nativeEvent.layout.height*/) {
             this.setState({
                 x: e.nativeEvent.layout.x,
                 y: e.nativeEvent.layout.y,
@@ -22,19 +23,19 @@ var Die = React.createClass({
                 height: e.nativeEvent.layout.height
             });
         }
-    },        
+    },
     onPress() {
         this.props.onPress && this.props.onPress(this.props.die);
-    },    
+    },
     render() {
-        let size = this.props.size || this.state.width || 32;        
-        size -= (size*0.08); // shrink a bit
+        let size = this.props.size || Math.min(this.state.height, this.state.width) || 32;
+        size *= 0.98; // shrink a bit
         let cell = size / 3;
         let diecolor = this.props.dieColor || this.props.color.die;
-        let dotcolor = this.props.dotColor || this.props.color.dot;			
+        let dotcolor = this.props.dotColor || this.props.color.dot;
         return (
-            <View style={{flex: 1, marginLeft: 1, marginRight: 1}} onLayout={this.onLayout}>            
-                <TouchableOpacity onPress={this.onPress} style={{                                        
+            <View style={{flex: 1, marginLeft: 1, marginRight: 1}} onLayout={this.onLayout}>
+                <TouchableOpacity onPress={this.onPress} style={{
                     width: size,
                     height: size,
                     backgroundColor: diecolor,
@@ -52,9 +53,9 @@ var Die = React.createClass({
                     )}
                 </TouchableOpacity>
             </View>
-            
+
         );
-    }    
+    }
 });
 
 module.exports = Die;
