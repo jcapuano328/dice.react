@@ -1,9 +1,6 @@
-'use strict'
-
 var React = require('react');
 import { View, TouchableOpacity } from 'react-native';
 var DieFaceNumber = require('./dieFaceNumber');
-var range = require('../services/range');
 
 var Die = React.createClass({
     onPress() {

@@ -1,14 +1,14 @@
-'use strict'
+import {Range} from 'react-native-nub';
 var Die = require('./die');
 var Sound = require('./sound');
-var range = require('./range');
+
 
 function Dice(opts) {
 	var self = this;
     var dice = [];
     opts = opts || [{num: 1, low: 1, high: 6, diecolor: 'white', dotcolor: 'black'}];
 	opts.forEach((opt) => {
-		range(opt.num).forEach((i) => {
+		Range(opt.num).forEach((i) => {
 	    	dice.push(new Die(opt.low, opt.high, opt.diecolor||opt.color, opt.dotcolor));
         });
 	});

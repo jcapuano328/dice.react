@@ -1,9 +1,7 @@
-'use strict'
-
-var AudioPlayer = require('react-native-audioplayer');
+import {Sound} from 'react-native-nub';
 
 module.exports = {
 	play() {
-		AudioPlayer.play('droll.wav');
+		Sound.play('droll.wav');
     }
 };

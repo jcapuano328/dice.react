@@ -1,7 +1,7 @@
 import React from 'react';
 import { View, TouchableOpacity } from 'react-native';
+import {Range} from 'react-native-nub';
 import DieFaceDot from './dieFaceDot';
-import range from '../services/range';
 
 var Die = React.createClass({
     getInitialState() {
@@ -46,9 +46,9 @@ var Die = React.createClass({
                     //marginLeft: 5,
                     //marginRight: 5
                 }}>
-                        {range(3).map((r,ri) =>
+                        {Range(3).map((r,ri) =>
                         <View key={ri} style={{flex: 1, flexDirection: 'row'}}>
-                            {range(3).map((c,ci) => <DieFaceDot key={ri+ci} value={this.props.value} color={dotcolor} size={cell} row={ri} col={ci} />)}
+                            {Range(3).map((c,ci) => <DieFaceDot key={ri+ci} value={this.props.value} color={dotcolor} size={cell} row={ri} col={ci} />)}
                         </View>
                     )}
                 </TouchableOpacity>
