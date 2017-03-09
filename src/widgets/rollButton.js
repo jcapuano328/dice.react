@@ -1,3 +1,4 @@
+import React from 'react';
 import { TouchableOpacity, Image } from 'react-native';
 import {Style} from 'react-native-nub';
 var DiceRollIcon = require('../resources/dicecup.png');
